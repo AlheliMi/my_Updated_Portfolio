@@ -1,6 +1,4 @@
-
 import React from "react";
-
 import Navbar from "../components/Navbar/Navbar";
 import Jumbotron from "../components/Jumbotron/Jumbotron"
 import AboutMe from "../components/AboutMe/AboutMe";

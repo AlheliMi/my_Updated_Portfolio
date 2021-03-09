@@ -13,21 +13,26 @@ function Navbar() {
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
             <Link to="/"  className={location.pathname === "/"  ? "nav-link" : "nav-link" } href="#">
-            <i className="fas fa-laptop-house"></i>
+            <button>
+              <i className="fas fa-laptop-house"></i>
                <p>HOME</p>
+            </button>
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/Portfolio" className={location.pathname === "/Portfolio" ?  "nav-link": "nav-link"}>
-            <i class="fas fa-project-diagram"></i>
+             <button>
+              <i class="fas fa-project-diagram"></i>
               PROJECTS
+             </button>  
             </Link>
           </li>
 
           <li className="nav-item">
             <Link to="/Contact_Me" className={location.pathname === "/Contact_Me" ?  "nav-link": "nav-link"}>
-            <i class="far fa-comments"></i>
-              CONTACTME 
+            <button> <i class="far fa-comments"></i>
+              CONTACTME
+            </button> 
             </Link>
           </li>
         </ul>
