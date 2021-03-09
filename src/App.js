@@ -10,7 +10,7 @@ function App() {
     <Router>
       
       <Route extact path="/" component={Home}/>
-      
+          
     </Router>
   
 
