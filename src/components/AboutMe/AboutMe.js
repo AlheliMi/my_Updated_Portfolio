@@ -1,6 +1,9 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom"
 
 function AboutMe() {
+const location= useLocation
+
   return (
 
     <div className="flexCol flexBetween">
@@ -12,20 +15,29 @@ function AboutMe() {
 <div className="aboutMe flexCol">
     <h1>Alhelí</h1>
 <h2>about me.....</h2>
-<div className=" flexRow flexBetween">
-<a id= "resume" href="" className="lilac round size1">
+<div className="barra1"></div>
+<div className="flexRow flexBetween">
+<Link to="/MyResume" id= "resume" className={location.pathname ==="/MyResume" ? "lilac round size1": "lilac round size1"} >
   <p className="words">My Resume</p>
-</a>
-<a id= "skills" href="" className="blue round size1">
+</Link>
+<Link to= "/Portfolio" id="Projects" className={location.pathname === "/Portfolio" ? "blue round size1":"blue round size1"}>
  <p className="words">Current Projects </p>
-</a>
-<a id= "work" href="" className="pink round size1">
+</Link>
+<Link to= "/ContactMe" id= "ContactMe"  className= {location.pathname === "/ContactMe" ? "pink round size1" : "pink round size1"}>
   <p className="words">Contact me</p>
-</a>
-
+</Link>
 </div>
 
-<p>Enthusiastic technical professional with complete understanding of entire software development lifecycle. Highly trained in Javascript and Node, HTML and CSS, and known for having talents in front-end and back-end.</p>
+<div className="barra1"></div>
+
+<div className="">
+  <p className="words">
+  I am Mexican, currently living in Toronto, I was first form as a Dental surgeon, specialist in Orthodontics and Orthopedics, 
+  now I am an enthusiastic technical professional in software development lifecycle, trained in Javascript and Node, HTML and CSS, 
+  knowledge in front-end and back-end. I´m always in the search of learn something new
+  </p>
+  <p>Always Smile</p>
+</div>
 
   </div>
 </div>

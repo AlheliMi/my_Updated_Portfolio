@@ -12,6 +12,23 @@ body {
     overflow: hidden;
 }
 
+.jumbotron1 {
+    background: url(https://nuestraflora.com/wp-content/uploads/2019/07/flor-de-aleli-17.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: 100px!important;
+    text-align: center;
+    align-items: unset;
+    font-family:'Montserrat', sans-serif!important;
+    color:white;
+  }
+
+.text{
+    text-shadow: rgb(129, 179, 245);
+    padding: top;
+}
+
 .home {  
     height: 500px;
     width: 500px;
