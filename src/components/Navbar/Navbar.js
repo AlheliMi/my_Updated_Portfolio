@@ -6,38 +6,33 @@ function Navbar() {
   const location = useLocation();
 
   return (
+ <div>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+  <form class="form-inline">
+<Link to="/About_Me"  className={location.pathname === "/About_Me"  ? "nav-link" : "nav-link" }>
+<button className="btn btn-outline-info button" type="button">
+  <i className="fas fa-laptop-house fa-2x"></i>
+   <p>HOME</p>
+</button>
+</Link>
+<Link to="/Portfolio" className={location.pathname === "/Portfolio" ?  "nav-link": "nav-link"}>
+  <button className="btn btn-outline-info button" type="button">
+      <i class="fas fa-project-diagram fa-2x"></i>
+        <p>PROJECTS</p>
+  </button>  
+</Link>
 
-    <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center nav-pills nav-fill nav-justified">
-
-      <div className="">
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <Link to="/"  className={location.pathname === "/"  ? "nav-link" : "nav-link" } href="#">
-            <button>
-              <i className="fas fa-laptop-house"></i>
-               <p>HOME</p>
-            </button>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/Portfolio" className={location.pathname === "/Portfolio" ?  "nav-link": "nav-link"}>
-             <button>
-              <i class="fas fa-project-diagram"></i>
-              PROJECTS
-             </button>  
-            </Link>
-          </li>
-
-          <li className="nav-item">
-            <Link to="/Contact_Me" className={location.pathname === "/Contact_Me" ?  "nav-link": "nav-link"}>
-            <button> <i class="far fa-comments"></i>
-              CONTACTME
+<Link to="/Contact_Me" className={location.pathname === "/Contact_Me" ?  "nav-link": "nav-link"}>
+            <button className="btn btn-outline-info button"> <i class="far fa-comments fa-3x"></i>
+           <p>CONTACT ME</p> 
             </button> 
             </Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+
+
+
+  </form>
+</nav>
+</div>
   );
 }
 

@@ -8,13 +8,13 @@ import "../styles/scroll.css"
 import "../styles/style.css"
 /* import Footer from "../components/Footer/Footer"; */
 import Cards from '../components/Cards/Cards';
+import sideMenu from "../components/Cards/sideMenu"
 
 function Portfolio() {
     return(
         <div className="">
-            <Navbar/>
+            <sideMenu/>
             <Cards/>
-        
 
         </div>
     )

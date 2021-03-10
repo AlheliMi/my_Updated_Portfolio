@@ -19,10 +19,45 @@ body {
     padding-bottom: 2%;
     text-align: center;
     height: 100px!important;
-    font-family:'Montserrat', sans-serif!important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif!important;
     color:white;
   }
 
+.button{
+    height: 100px;
+    width: 200px;
+}
+
+
+
+  .myButton {
+	box-shadow:inset 0px 1px 0px -1px #bdafd1;
+	background:linear-gradient(to bottom, #c6a1f5 5%, #a490f5 100%);
+	background-color:#c6a1f5;
+	border-radius:17px;
+	border:4px solid #c2b4f0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ad7aff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+    padding:50px 60px;
+    height: 70px;
+    width: 100px;
+    text-align: center;
+	text-decoration:none;
+	text-shadow:-3px -1px 3px #aa9cf7;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #a490f5 5%, #c6a1f5 100%);
+	background-color:#a490f5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
 .home {  
     height: 500px;
@@ -113,15 +148,19 @@ body {
 }
 
 .menu {
-    width: 50px;
+    width: 150px;
     height: 100vh;
-    background-color: rgb(131, 109, 195);
+    background-color:  rgb(207, 223, 252);
 }
 
 .encabezado {
     width: auto;
-    height: 155px;
+    height: 80px;
     background-color: rgb(138, 230, 214);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+    padding-top: 25px;
 }
 
 .card{
@@ -162,9 +201,9 @@ body {
     padding: 30px;
     background-image: linear-gradient(to bottom left, rgb(236, 241, 246), rgba(218, 195, 244, 0.69), rgba(233, 203, 244, 0.703));
 }
-/* 
+
 .card1 {
-  background-image: url("assets/images/game.png");  
+  background-image: url("../images/game.png");  
   background-position: center;
   background-size: 300px 400px;
   height: 400px;
@@ -172,19 +211,19 @@ body {
 }
 
 .card2 {
-    background-image: url("assets/images/PassswordG.png");  
+    background-image: url("../images/PassswordG.png");  
     background-position: center;
     background-size:300px 400px;
 }
 
 .card3 {
-    background-image: url("assets/images/WeatherDash.png");  
+    background-image: url("../images/WeatherDash.png");  
     background-position: center;
     background-size:300px 400px; 
 }
 
 .card4 {
-    background-image: url("assets/images/scheduler.png");  
+    background-image: url("../images/scheduler.png");  
     background-position: center;
     background-size:300px 400px; 
     height: 400px;
@@ -192,19 +231,29 @@ body {
 }
 
 .card5 {
-    background-image: url("assets/images/eatDaBurger.gif");  
+    background-image: url("../images/eatDaBurger.gif");  
     background-position: center;
     background-size:300px 400px; 
 }
 
 .card6 {
-    background-image: url("assets/images/fitness02.png");  
+    background-image: url("../images/fitness02.png");  
     background-position: center;
     background-size:300px 400px; 
 }
 
-.card3 {
-    background-image: url("assets/images/Employee_tracker.gif");  
+.card7 {
+    background-image: url("../images/NoteTaker.gif");  
     background-position: center;
     background-size:300px 400px; 
-} */
+}
+.card8 {
+    background-image: url("../images/Employee-Directory.gif");  
+    background-position: center;
+    background-size:300px 400px; 
+}
+.card9 {
+    background-image: url("../images/deantAPPointment_2.gif");  
+    background-position: center;
+    background-size:300px 400px; 
+}
